@@ -1,16 +1,5 @@
-# dla dowolnych wartośći
-def postal_code_generator(value1, value2):
+def postal_code_generator(value1="79-900", value2="80-155"):
     result = []
-    for code in range(int(value1.replace('-', '')) + 1, int(value2.replace('-', ''))):
-        result.append(str(code)[:-3] + '-' + str(code)[-3:])
-    return result
-    
-    
-#dla wartości z zadania
-def postal_code_generator():
-    result = []
-    value1 = "79-900"
-    value2 = "80-155"
     for code in range(int(value1.replace('-', '')) + 1, int(value2.replace('-', ''))):
         result.append(str(code)[:-3] + '-' + str(code)[-3:])
     return result
