@@ -1,0 +1,7 @@
+def missing_values(num_list, n):
+    original_list = [x for x in range(1, n + 1)]
+    result = []
+    for value in original_list:
+        if value not in num_list:
+            result.append(value)
+    return result
