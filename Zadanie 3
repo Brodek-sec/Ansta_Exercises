@@ -1,0 +1,6 @@
+def generating_values(value1=2, value2=5.5, n=0.5):
+    result = [value1]
+    while result[-1] != value2:
+        value1 += n
+        result.append(value1)
+    return result
